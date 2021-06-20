@@ -19,6 +19,10 @@ power(10,-2) throw Error exponent should be >= 0
  * @param {integer} base an integer
  * @param {integer} exponent a non-negative integer
  */
-function power(base, exponent) {}
+function power(base, exponent) {
+  if (exponent < 0 ) {
+    throw new Error("exponent should be >= 0");
+  }
+}
 
 module.exports = power;
